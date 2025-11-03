@@ -1,4 +1,14 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+:root {
+  --title-color: #DB00FF;
+  --accent-color: #FF0070;
+  --bg-color: #000028;
+  --text-color: #F1B2CE;
+  --font-size-base: 18px;
+  --line-height-base: 1.3em;
+  --spacing-s: 10px;
+  --spacing-m: 20px;
+  --spacing-l: 40px;
+  --spacing-xl: 50px;
+  --spacing-xxl: 60px;
+  --spacing-xxxl: 80px;
+}
