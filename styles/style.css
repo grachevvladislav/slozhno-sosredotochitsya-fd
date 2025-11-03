@@ -96,7 +96,7 @@
 }
 
 .title-decor {
-  color: var(--bg-color);
+  color: var(--text-color);
   background-color: var(--accent-color);
   font-weight: bold;
 }
