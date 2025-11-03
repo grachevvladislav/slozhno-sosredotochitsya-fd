@@ -84,6 +84,16 @@
   text-align: center;
 }
 
+.header__theme-menu-button:hover {
+  box-shadow: 0 0 0 1px rgb(from var(--second-text-color) r g b / 40%);
+}
+
+.header__theme-menu-button:focus {
+  text-decoration: none;
+  border-bottom: 1px solid var(--second-text-color);
+  outline: none;
+}
+
 .header__theme-menu-button_active {
   border: 1px solid var(--second-text-color);
 }
@@ -148,6 +158,15 @@
 .section__paragraph a {
   text-shadow: 2px 2px 0 var(--accent-color);
   text-decoration: none;
+}
+
+.section__paragraph a:hover {
+  text-decoration: underline;
+}
+
+.section__paragraph a:focus {
+  outline: 1px solid var(--text-color);
+  outline-offset: 1px;
 }
 
 .gallery {
