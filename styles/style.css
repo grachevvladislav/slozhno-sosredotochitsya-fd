@@ -1,5 +1,5 @@
 .page {
-  background: url("../images/cover-image-dark.png") center center / cover fixed, var(--bg-color);
+  background: var(--bg-image) center center / cover fixed, var(--bg-color);
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -19,8 +19,8 @@
   position: absolute;
   width: 25px;
   height: 25px;
-  border-top: 1px solid var(--accent-color);
-  border-right: 1px solid var(--accent-color);
+  border-top: 1px solid var(--second-text-color);
+  border-right: 1px solid var(--second-text-color);
 }
 
 .decorated-zone::after {
@@ -28,8 +28,8 @@
   position: absolute;
   width: 25px;
   height: 25px;
-  border-bottom: 1px solid var(--accent-color);
-  border-left: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--second-text-color);
+  border-left: 1px solid var(--second-text-color);
 }
 
 .header {
@@ -76,11 +76,12 @@
   text-transform: lowercase;
   font-size: var(--font-size-base);
   line-height: var(--line-height-base);
+  color: var(--second-text-color);
   text-align: center;
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--second-text-color);
 }
 
 .header__title {
@@ -115,7 +116,7 @@
 }
 
 .section__title {
-  color: var(--accent-color);
+  color: var(--second-text-color);
 }
 
 .section__parallel__content {
