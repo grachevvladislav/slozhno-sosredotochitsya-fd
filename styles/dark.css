@@ -5,12 +5,8 @@
   --text-color: #F1B2CE;
   --second-text-color: #FF0070;
   --bg-image: url("../images/cover-image-dark.png");
-  --font-size-base: 18px;
-  --line-height-base: 1.3em;
-  --spacing-s: 10px;
-  --spacing-m: 20px;
-  --spacing-l: 40px;
-  --spacing-xl: 50px;
-  --spacing-xxl: 60px;
-  --spacing-xxxl: 80px;
+}
+
+.theme-dark .header__lamp {
+  display: initial;
 }

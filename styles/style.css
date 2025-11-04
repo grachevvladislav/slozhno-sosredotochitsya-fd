@@ -10,11 +10,6 @@
 }
 
 .decorated-zone {
-  display: grid;
-  color: var(--accent-color);
-  inline-size: 100%;
-  block-size: 100vh;
-  align-items: center;
   position: relative;
 }
 
@@ -37,7 +32,13 @@
 }
 
 .header {
+  display: grid;
+  color: var(--accent-color);
+  inline-size: 100%;
+  block-size: 100vh;
+  align-items: center;
   grid-template-rows: 1fr min-content 1fr;
+  min-height: 668px;
 }
 
 .header__lamp {
@@ -55,7 +56,7 @@
   height: 9px;
   background: var(--accent-color);
   box-shadow: 0 0 4px 2px var(--accent-color);
-  border-radius: 9px;
+  border-radius: 50%;
   margin-inline-start: 10px;
 }
 
@@ -74,7 +75,7 @@
 .header__theme-menu-button {
   padding: 0 13px;
   inline-size: 70px;
-  block-size: 26px;
+  min-block-size: 26px;
   background-color: inherit;
   border: none;
   text-transform: lowercase;
@@ -82,6 +83,7 @@
   line-height: var(--line-height-base);
   color: var(--second-text-color);
   text-align: center;
+  cursor: pointer;
 }
 
 .header__theme-menu-button:hover {
@@ -96,6 +98,7 @@
 
 .header__theme-menu-button_active {
   border: 1px solid var(--second-text-color);
+  pointer-events: none;
 }
 
 .header__title {
@@ -110,7 +113,7 @@
 }
 
 .title-decor {
-  color: var(--text-color);
+  color: var(--bg-color);
   background-color: var(--accent-color);
   font-weight: bold;
 }
@@ -138,6 +141,12 @@
   display: grid;
   gap: var(--spacing-m);
 }
+
+.section__solid__content {
+    grid-column: 1 / -1;
+    display: grid;
+    gap: var(--spacing-m);
+  }
 
 .section__subtitle {
   margin-bottom: var(--spacing-m);
@@ -190,6 +199,11 @@
 }
 
 .footer {
+  display: grid;
+  color: var(--accent-color);
+  inline-size: 100%;
+  block-size: 100vh;
+  align-items: center;
   grid-template-rows: 1fr;
   justify-items: center;
 }
@@ -216,7 +230,8 @@
     right: 0;
   }
 
-  .decorated-zone {
+  .header,
+  .footer {
     padding-block: var(--spacing-s);
   }
 
@@ -261,7 +276,8 @@
     right: 20px;
   }
 
-  .decorated-zone {
+  .header,
+  .footer {
     padding-block: var(--spacing-m);
   }
 
@@ -286,10 +302,6 @@
   .section {
     margin-inline: var(--spacing-m);
     grid-template-columns: 1fr 2fr;
-  }
-
-  .section__solid__content {
-    grid-column: 1 / -1;
   }
 
   .gallery {
@@ -351,6 +363,6 @@
 
   .section__solid__content {
     grid-row: 2 / auto;
-    grid-column: unset;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
