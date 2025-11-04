@@ -2,8 +2,9 @@
   --title-color: #DB00FF;
   --accent-color: #FF0070;
   --bg-color: #000028;
-  --text-color: #F1B2CE;
+  --paragraph-text-color: #F1B2CE;
   --second-text-color: #FF0070;
+  --subtitile-color: #000028;
   --bg-image: url("../images/cover-image-dark.png");
 }
 
